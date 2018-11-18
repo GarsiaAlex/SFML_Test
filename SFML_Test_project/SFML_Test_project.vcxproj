@@ -64,7 +64,7 @@
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "$(SolutionDir)SFML\bin\*.dll" "$(ProjectDir)bin\$(Configuration)\"</Command>
+      <Command>copy /y "$(SolutionDir)SFML\dll\*.dll" "$(ProjectDir)bin\$(Configuration)\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -85,7 +85,7 @@
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "$(SolutionDir)SFML\bin\*.dll" "$(ProjectDir)bin\$(Configuration)\"</Command>
+      <Command>copy /y "$(SolutionDir)SFML\dll\*.dll" "$(ProjectDir)bin\$(Configuration)\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
